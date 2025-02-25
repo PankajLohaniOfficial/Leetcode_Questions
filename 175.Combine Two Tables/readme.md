@@ -1,4 +1,4 @@
-# 🏆 EASY SQL Question: Join `Person` and `Address` Tables
+# 🏆 EASY
 
 ## 📌 Table: `Person`
 

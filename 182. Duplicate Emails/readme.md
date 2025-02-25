@@ -1,40 +1,40 @@
-EASY
+# 🏆 EASY
 
-Table: Person
+## 📌 Table: `Person`
 
-+-------------+---------+
 | Column Name | Type    |
-+-------------+---------+
+|-------------|---------|
 | id          | int     |
 | email       | varchar |
-+-------------+---------+
-id is the primary key (column with unique values) for this table.
-Each row of this table contains an email. The emails will not contain uppercase letters.
- 
 
-Write a solution to report all the duplicate emails. Note that it's guaranteed that the email field is not NULL.
+- `id` is the **primary key** (column with unique values) for this table.
+- Each row contains an email (all lowercase, no NULL values).
 
-Return the result table in any order.
+---
 
-The result format is in the following example.
+## 📊 Problem Statement
+Write an SQL query to **report all duplicate emails** in the `Person` table.
 
- 
+📢 **Note:** The result table can be returned in any order.
 
-Example 1:
+---
 
-Input: 
-Person table:
-+----+---------+
+## 🔍 Example
+
+### 📝 Input:
+
+#### `Person` Table:
 | id | email   |
-+----+---------+
+|----|---------|
 | 1  | a@b.com |
 | 2  | c@d.com |
 | 3  | a@b.com |
-+----+---------+
-Output: 
-+---------+
+
+### ✅ Output:
+
 | Email   |
-+---------+
+|---------|
 | a@b.com |
-+---------+
-Explanation: a@b.com is repeated two times.
+
+### 🧐 Explanation:
+- The email **`a@b.com`** appears **twice**, so it is considered a duplicate.

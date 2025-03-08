@@ -28,7 +28,9 @@ Given an integer `num`, return the number of digits in `num` that divide `num`. 
 
 ## Solution
 
-You can implement the solution in various programming languages. Below is a Python implementation:
+You can implement the solution in various programming languages. 
+
+Below is a Python implementation:
 
 ```python
 def countDigits(num: int) -> int:
@@ -38,5 +40,27 @@ def countDigits(num: int) -> int:
         if num % val == 0:
             count += 1
     return count
+```
 
-``` s
+Below is the C++ implementation:
+
+```c++
+class Solution {
+public:
+    int countDigits(int num) {
+       int count = 0, temp = abs(num); // Take absolute value to handle negative numbers
+       
+       while (temp > 0) {
+           int digit = temp % 10;  // Extract the last digit
+           
+           if (digit != 0 && num % digit == 0) {  // Check if digit divides num
+               count++;
+           }
+           
+           temp /= 10;  // Remove the last digit
+       }
+       
+       return count;  // Return the final count
+    }
+};
+```

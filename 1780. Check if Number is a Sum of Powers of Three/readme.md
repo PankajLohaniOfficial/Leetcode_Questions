@@ -28,7 +28,9 @@ An integer `y` is a power of three if there exists an integer `x` such that `y =
 
 ## Solution
 
-You can implement the solution in various programming languages. Below is a Python implementation:
+You can implement the solution in various programming languages. 
+
+Below is a Python implementation:
 
 ```python
 def checkPowersOfThree(n: int) -> bool:
@@ -37,3 +39,14 @@ def checkPowersOfThree(n: int) -> bool:
             return False
         n //= 3
     return True
+```
+Below is a C++ implementation:
+
+``` cpp
+def checkPowersOfThree(n: int) -> bool:
+    while n > 0:
+        if n % 3 == 2:
+            return False
+        n //= 3
+    return True
+```
